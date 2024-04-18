@@ -1,4 +1,5 @@
 import React from "react";
+import { posing } from "../../assets/posting";
 import PostingCard from "./PostingCard";
 
 const MainPosting = () => {
@@ -11,7 +12,9 @@ const MainPosting = () => {
         height: "400px",
       }}
     >
-      <PostingCard />
+      {posing.map((post, idx) => (
+        <PostingCard key={post.positingID} post={post} />
+      ))}
     </div>
   );
 };

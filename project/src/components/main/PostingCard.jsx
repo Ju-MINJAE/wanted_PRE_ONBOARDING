@@ -1,16 +1,16 @@
 import React from "react";
 
-const PostingCard = () => {
+const PostingCard = ({ post }) => {
   return (
     <div>
       <div className="postingHeader">
-        <img src={""} alt="user" />
-        <span>NickName</span>
+        {/* <img src={""} alt="user" /> */}
+        <span>{post.homePostingUser.nickname}</span>
       </div>
 
       <div className="postingBody">
-        <img src={""} alt="thumbnail" />
-        <p>포스팅 제목</p>
+        {/* <img src={""} alt="thumbnail" /> */}
+        <p>{post.title}</p>
         <p>포스팅 요약</p>
       </div>
 
